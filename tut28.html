@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+       .container{
+           border: 2px solid black;
+           padding: 4px;
+           height: 555px;
+           width: 100%;
+           /*initializing the container as a flex*/
+           display: flex;
+
+           /*Flex properties for flex container
+           flex-direction: column;
+           flex-direction: column-reverse;
+           flex-direction: row-reverse;
+           flex-direction: row;*/
+
+          /* flex-wrap: wrap;
+           /*flex-flow: wrap row-reverse;/* Flex-flow is used to use flex-direction and flex-wrap at the same time*/
+          
+           /*justify-content: center;/* to bring the contents in the middle*/
+           /* justify-content: space-between;/*it provides space within each element*/
+           /*justify-content: space-evenly;/*it provides the same space before and after the first and last element , same space means the space which is between each element.*/
+           /*justify-content: space-around;/*it provides equal space around each element.*/
+
+           /*align-items: center;/*makes the element place in the centre*/
+           /*align-items: flex-end;/*places the element at the base of flex*/
+            /*align-items : flex-start; this is by default the element is placed at the top of the flex*/
+       }
+       .items{
+           background-color: cadetblue;
+           margin: 5px;
+           padding: 4px;
+           border: 2px solid blue;
+           width: 100px;
+           height: 100px;
+           
+       }
+       #item1{
+           /*Flex properties for Flex item*/
+           order: 2;/*Higher order places the element at the extreme end of the sequence*/
+         /*flex-basis: 220px; /*it adjusts the box according to the flex direction given.*/
+       }
+       #item2{
+            order: 1;
+            /*flex-grow: 2;/*This increases the width of the specified box with increaase in the width of the container.*/
+            /*flex-shrink : 3; used to shrink the specified box more ,while reducing the width.*/
+        }
+       #item3{
+            align-self: center;/* used to fix position of each box*/
+       }
+    </style>
+</head>
+<body>
+    <h4>FlexBox Tutorial</h4>
+    <div class="container">
+        <div class="items" id="item1">First Box</div>
+        <div class="items" id="item2">Second Box</div>
+        <div class="items" id="item3">Third Box</div>
+        <div class="items" id="item4">Fourth Box</div>
+        <div class="items" id="item5">Fifth Box</div>
+        <div class="items" id="item6">Sixth Box</div>
+    </div>
+</body>
+</html>

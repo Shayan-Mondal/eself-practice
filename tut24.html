@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIsplay</title>
+    <style>
+        header {
+            margin: auto;
+            /*  border: 2px solid blue;*/
+            width: 20%;
+        }
+
+        img {
+            width: 54px;
+            display: block;
+            margin: auto;
+        }
+
+        h4 {
+            margin: 0px;
+            text-align: center;
+        }
+
+        .box {
+            border: 2px solid red;
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+            display: inline-block;
+            padding: 4px;
+            /*This is used to bring all the elements in one line.*/
+        }
+
+        #div1 {
+            border: 2px solid blue;
+        }
+
+        #box3 {
+            position: sticky;/*relative - the box will move relative to it's position;
+            absolute: the box will move according to it's parent;
+            fixed: the box stays fixed anywhere in the page according to it's parent;
+            sticky: it's used to fix the box according to it's position.*/
+            right: 4px;
+            bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t1.0-9/72048337_1311763752332160_2820993859280961536_o.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_oc=AQmnppxit0kGCePdve8RZT9oIP8Ur8r9vjm0qN4HhzeLOpwf5OQ71YmGVO_qEtJjTPc&_nc_ht=scontent.fccu3-1.fna&oh=1fe98a03a45271ef2341aa34ab625ae2&oe=5F0E722C"
+            alt="">
+        <h4>Welcome to BrownPirate's World</h4>
+    </header>
+    <div class="div1">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

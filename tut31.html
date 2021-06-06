@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo Selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: blanchedalmond;
+        }
+        header::before{
+            background: url("https://image.shutterstock.com/image-photo/autumn-gyeongbokgung-palace-seoul-korea-600w-684885298.jpg");
+            position: absolute;
+        }
+        .navigation{
+            background-color: blanchedalmond;
+            color: blanchedalmond;
+            display: flex;
+            padding: 10px;
+            margin: 2px;
+            justify-content: center;
+            border-radius: 5px ;
+        }
+        li{
+            color: blanchedalmond;
+            padding: 5px;
+            margin: 6px;
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+        }
+        section{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">Types</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to the Coding World</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus expedita maxime animi excepturi tempora quisquam facilis ratione aspernatur unde ad culpa dolorum nostrum soluta, molestiae nobis vel quo incidunt!</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media querry</title>
+    <style>
+        .box{
+            background-color: red;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 72px;
+            display: none;
+        }
+        @media(max-width: 184px){
+            #box1{
+                display: block;
+                background-color: black;
+                color: blanchedalmond;
+            }
+        }
+        @media(min-width: 185px) and (max-width:485px ){
+            #box2{
+                display: block;
+                background-color: blueviolet;
+                color: black;
+            }
+        }
+        @media(min-width: 485px) and (max-width: 848px){
+            #box3{
+                display: block;
+                background-color: rgb(7, 0, 14);
+                color: rgb(218, 164, 164);
+            }
+
+        }
+        @media(min-width: 848px) and (max-width: 900px){
+            #box4{
+                display: block;
+                background-color: rgb(105, 126, 11);
+                color: rgb(1, 0, 5);
+            }
+        }
+        /*div > p : when p is right inside div*/
+        /*div + p: when p is right after div*/  
+        input[type="text"]{
+            color: blueviolet;/*pseudo selector*/
+        }
+        li:nth-child(3){
+            border: 2px solid red;/*nth-child pseudo selector*/
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="box" id="box1"> i am a mobile</div>
+        <div class="box" id="box2">i am a tablet</div>
+        <div class="box" id="box3"> i am a computer</div>
+        <div class="box" id="box4"> i am a wide screen computer</div>
+        <input type="text" placeholder="Enter your name">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+
+        
+    
+</body>
+</html>

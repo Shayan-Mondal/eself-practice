@@ -1,0 +1,34 @@
+footer{color: honeydew;}
+*{box-sizing: border-box;}
+/* using different font ways! */
+span{ font-style: italic;  font-weight: bold 400; font-size: 15px;  color: rgb(128, 126, 20);}
+/*border - border width , style , colour. Border radius is used to make curvy border.*/
+#idselector{border: 1px solid goldenrod;    background-color: rgb(17, 1, 1);   color: crimson ;  border-radius: 120px;}
+.classselector{color: darkgoldenrod;}
+p,footer{background-color:rgb(1, 19, 1);  width: 350px;}
+/* websave font */
+/* web font metal manis */
+p{font-family: 'Metal Mania', cursive,Georgia, 'Times New Roman', Times, serif;}
+#rgbcolour{color: rgb(112, 134, 177);}
+#hexcolour{color: #5c1e1e;}
+#bordertop{color: blanchedalmond; background-color: blueviolet;border-top: 2px solid saddlebrown;border-bottom:2px solid turquoise; border-right: 2px solid rgb(1, 19, 1); border-left: 2px solid yellow;}
+#backgroundtypes{
+  background-image: url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+  border: 2px solid black;
+  height: 100px;
+  background-color: white;
+  color: black;
+  background-repeat: no-repeat;/*repeat x and repeat y will make it repeat on x and y axis respectively*/
+  background-position: center center;}
+  .boxmodel{color: black; background-color: blanchedalmond; border: 2px solid rgb(112, 134, 177);
+/*padding: 5px; This is for inserting padding in general.*/
+padding: 12px 16px 19px 80px/*top right bottom left or x(top/bottom) y(right/left)*/;
+margin: 10px;/* This can also be used like padding.*/
+ box-sizing: border-box/*this is used , so that the width of the box remains the same ,irrespective of any change in padding,margin.*/;}
+  body{background-color: rgb(213, 209, 224, 0.84);}
+  /*.container{margin:33px auto;border:3px solid darkcyan;width: 450px;background-color: rgb(238, 177, 177);}/*margin auto is used bring an element in the centre*/
+  /*.item{border: 2px solid rgb(6, 6, 31);padding: 5px 50px;margin: 5px;background-color: cornflowerblue;}
+  #fruits{float: right;width : 48%;}
+  #computer{float:left;width : 48%;}
+  #grocerry{/*float: left*//*;width : 100%;clear : :left;}*/
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem vh vw responsive design</title>
+</head>
+<style>
+    .html{
+        font-size: 5rem;
+    }
+.container{
+    border: 2px solid red;
+    text-align: center;
+   /* font-size: 10px;*/
+    height: 100vh;/*vh is used to adjust the height and cover up the entire space*/
+    width: 100vw;/*vw is for width*/
+}
+.second{
+    /*font-size: 10em; em means it multiplies the size with the mentioned parent size*/
+  /*  padding: 2em; for padding it gets multiplied with the multiplied size of parent and the mentioned box.*/
+      font-size: 2rem;/*rem works with respect to html size.*/
+}
+</style>
+<body>
+    <div class="container">
+        <h1 class="first">This is first</h1>
+        <h1 class="second">This is second</h1>
+        <h1 class="third">This is third</h1>
+    </div>
+</body>
+</html>

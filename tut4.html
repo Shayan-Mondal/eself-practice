@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is the description">
+    <meta name="keywords" content="html, html tutorials , web develpoement">
+    <meta name="robots" content="INDEX , FOLLOW">
+    <title>my first website</title>
+    <!--This is how you insert css-->
+    <link rel="stylesheet" href="abir.css">
+    <!-- This is how you insert external js -->
+    <script src="abir.js"></script>
+    <!-- This is Internal CSS  -->
+    <style>
+        p {
+            /* element selector */
+            color: rgb(210, 30, 84);
+            background-color: darkgray;
+        }
+    </style>
+    <!-- importing web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Headers and Paragraphs</h2>
+    <!-- learning to use headers and paragraphs -->
+    <h3><em>Good afternoon darling</em></h3>
+    <h5><em>Love for my girl</em></h5>
+    <hr>
+    <p>This is the girl I always wanted to meet nad stay with.<br>She is awsome,she is blessed with <strong>intelligence
+            beauty cuteness rsponsibility carefrfee-attitude.</strong></p>
+    <span>She's the best for me. I love you Esha.</span>
+    <hr>
+    <!-- this is the way to link other externalwebpages ,target is used to open the link in a new tab, anchor tag is used.-->
+    <h4>Linking External pages</h4>
+    <a href="https://google.com" target="_blank">Click for Google</a><br>
+    <a href="https://facebook.com" target="_blank">Click for Facebook</a><br>
+    <!-- linking internal webpage -->
+    <h4>Linking Internal Page</h4>
+    <a href="/abir.html" target="_blank">Click for Abir</a><br>
+    <hr>
+    <h4>Image Inserting from outer pages</h4>
+    <!-- for linking external image in my web page , in source describe the path of the image , in alt write the condition if not loaded. -->
+    <img src="https://source.unsplash.com/200x200/?water" alt="Error loading">
+    <!-- for linling internal image -->
+    <hr>
+    <h4>Image inserting from saved file</h4>
+    <img src="abir.jpg" alt="error no image found.">
+    <hr>
+    <!-- Ways to use ordered and unordered list and also nesting them. -->
+    <h4>Lists</h4>
+    <ul type="circle">
+        <li>I am learning HTML.</li>
+        <ol type="a">
+            <li>I have learnt how to use headers,paragraphs,links.</li>
+            <li>I have also learnt how to use Lists.</li>
+        </ol>
+        <li>I am also learning CSS.</li>
+    </ul>
+    <hr>
+    <!-- Learning to use tables -->
+    <h4>Tables</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Designation</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shayan</td>
+                <td>99856</td>
+                <td>Full Stack Developer</td>
+                <td>Capgemini</td>
+            </tr>
+            <tr>
+                <td>Soumoudeep</td>
+                <td>85697</td>
+                <td>Full Stack Java Developer</td>
+                <td>Capgemini</td>
+            </tr>
+            <tr>
+                <td>Suvradeb</td>
+                <td>89745</td>
+                <td>Java Developer</td>
+                <td>Cognizant</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- forms -->
+    <h4>Forms</h4>
+    <form action="backend.python"></form>
+    <!-- label tag is used for beautification. -->
+    <label for="Name">Name</label>
+    <!-- div block is used so that it contains only one statement in a line. -->
+    <div>
+        <input type="text" name="myname" id="Name">
+    </div>
+    <!-- br is used for a empty line. -->
+    <br>
+    <label for="Company">Company</label>
+    <div>
+        <input type="text" name="myclass" id="Company">
+    </div>
+    <br>
+    <label for="Email">Email</label>
+    <div>
+        <input type="email" name="myemail" id="Email">
+    </div>
+    <br>
+    <label for="Bonus">Bonus</label>
+    <div>
+        <input type="number" name="mybonus" id="Bonus">
+    </div>
+    <br>
+    <div>
+        <!-- checkbox ,checked word is used to keep it checked my default -->
+        Are you eligible ? <input type="checkbox" name="myeligibility" checked>
+    </div>
+    <br>
+    <div>
+        <!-- use of radio -->
+        Gender : Male <input type="radio" name="mysex">Female <input type="radio" name="mysex">
+    </div>
+    <br>
+    <label for="car">Car</label>
+    <div>
+        <!-- use of select tag -->
+        <select name="mycar" id="car">
+            <option value="lambo">Lamborgini</option>
+            <option value="por">Porsche</option>
+            <!-- selected word is used to keep it selected by default -->
+            <option value="swf" selected>Swift</option>
+        </select>
+    </div>
+    <br>
+    <label for="Tell about yourself">Tell about yourself :</label>
+    <div>
+        <!-- textarea tag -->
+        <br> <textarea name="mytext" id="" cols="30" rows="10" id="Tell about yourself"></textarea>
+    </div>
+    <br>
+    <label for="Date">Date</label>
+    <div>
+        <input type="date" name="date" id="Date">
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit now">
+        <input type="reset" value="Reset now">
+    </div>
+    <hr>
+    <!-- Inline and block elements -->
+    <!-- The colour coding shows block element occupies the entire space whereas inline elment span consumes the required space. -->
+    <h4>Inline and Block elements</h4>
+    <!-- This is Inline CSS -->
+    <p style="border: 2px solid red;">This is a Laptop</p>
+    <p style="border: 2px solid blue;">But also can be used as a programming machine</p>
+    <span style="border: 2px solid green;">I love humans</span>
+    <span style="border: 2px solid purple;">I also love dogs</span>
+    <hr>
+    <h4>Ids and Classes</h4>
+    <!-- classes ids -->
+    <div id="mydemp" class="redbg blackborder">
+        <p>hello world</p>
+    </div>
+    <span class="blackborder">
+        hii lappy
+    </span>
+    <hr>
+    <h4>HTML Entities</h4>
+    <!-- to print <p> &lt;__&gt; is used -->
+    <p>The alphabet after o is &lt;p&gt;</p>
+    <!-- for writing space &nbsp is used -->
+    <p>The &nbsp;alphabet.</p>
+    <!-- &copy for copyrighy symbol -->
+    <hr>
+    <h4>CSS Tutorial</h4>
+    <!-- Inline CSS -->
+    <span>Inline Css</span>
+    <span style="color: blue; background-color: cadetblue;">This is called <em>Inline CSS</em> implementation.</span>
+    <hr>
+    <h4>Selectors</h4>
+    <!-- Element Selector -->
+    <span>Learning about selectors.This is element selector.</span>
+    <!-- ID Selector -->
+    <div>
+        <span id="idselector">Learning about selectors.This is id selector.</span>
+    </div>
+    <!-- Class Selector -->
+    <div>
+        <span class="classselector">Hey this is a class selector.</span>
+    </div>
+    <!--Grouping Selector  -->
+    <div>
+        <p>Hi fellow this is Grouping Selector</p>
+    </div>
+    <footer>So,this is the footer , also grouping selector is used. </footer>
+    <hr>
+    <h4>Chrome develpoment</h4>
+    <span>Select anything right click and click inspect , then modify.</span>
+    <hr>
+    <h4>Colour , Border , Background</h4>
+    <span id="rgbcolour">Here we are using rgb colour.</span>
+    <br>
+    <span id="hexcolour">Here we are using hexcolour.</span>
+    <br>
+    <span id="bordertop">this is how we do bordertop,down,left,right.</span>
+    <br>
+    <p id="backgroundtypes">Putting of a background image , positioning it , preventing it to get repeated.</p>
+    <hr>
+    <h4>Box model , margin, padding</h4>
+    <h6>number 1</h6>
+    <p class="boxmodel"> This is a box model.</p>
+    <h6>number 2</h6>
+    <p class="boxmodel">This is a second line.</p>
+    <h6>number 3</h6>
+    <p class="boxmodel">This is the third line.</p>
+    <hr>
+    <h4>Float and clear</h4>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h6>Fruits</h6>
+            <span id="fruitspara" class="para">All fruits are available.</span>
+        </div>
+        <div id="computer" class="item">
+            <h6>Computer</h6>
+            <span id="computerpara" class="para">All computers are available.</span>
+        </div>
+        <div id="grocerry" class="item">
+            <h6>Grocerry</h6>
+            <span id="grocerrypara" class="para">All grocerries are available.</span>
+        </div>
+        <br>
+        <span>Not clearly understood float.</span>
+    </div>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rosybrown;
+            border-radius: 4px;
+        }
+        .navbar ul{
+            overflow: auto;/*this is used to get the bc of nav*/
+            
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            
+        }
+        .navbar li a:hover{
+            color: rgb(247, 238, 238);
+            background-color: sienna;
+        }
+        .search{
+            float: right;
+            padding: 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+            <ul>
+                <li><a href="">Home</a></li>
+                <li> <a href="">History</a></li>
+                <li><a href="">Future</a> </li>
+                <li><a href="">Contact</a></li>
+                <div class="search"><input type="text" name="search" id="search" placeholder="Search :">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

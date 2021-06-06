@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z Index</title>
+    <style>
+.box{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    
+}
+#box1{
+    position: relative;
+    top: 75px;
+    background-color: red;
+}
+#box2{
+    position: relative;
+    top: 45px;
+    background-color: blue;
+    z-index: -65px;/*This is used to bring the specified box above on the stack.*/
+}
+#box3{
+    display: none;/*This removes the element completely from the page*/
+    visibility: hidden;/*This only hides the element but consumes the place.*/
+}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
